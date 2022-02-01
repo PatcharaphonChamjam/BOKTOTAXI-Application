@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:orientation="vertical"
+    tools:context="com.boktotaxi.boktotaxi.Activity.Menu_Fragment">
+
+
+    <TextView
+        android:id="@+id/MenuUsername"
+        android:text="Username"
+        android:drawableLeft="@drawable/profile_user"
+        android:gravity="center_vertical"
+        android:drawablePadding="32dp"
+        android:drawableRight="@drawable/profile_edit"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" />
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorgrayopacity"
+        ></View>
+
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorgrayopacity"
+        ></View>
+
+
+
+    <TextView
+        android:id="@+id/MenuLogout"
+        android:text="Logout"
+        android:drawableLeft="@drawable/logout"
+        android:gravity="center_vertical"
+        android:drawablePadding="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" />
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorgrayopacity"
+        ></View>
+
+    <TextView
+        android:id="@+id/userid"
+        android:text="USERID : "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+</LinearLayout>

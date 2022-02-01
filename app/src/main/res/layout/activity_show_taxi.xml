@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.boktotaxi.boktotaxi.Activity.ShowTaxiActivity">
+
+    <TextView
+        android:id="@+id/SearchTextcar"
+        android:text="Car license :"
+        android:layout_below="@+id/rating"
+        android:textSize="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        />
+    />
+    <TextView
+        android:id="@+id/SearchEdtcar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AA 11111"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/bootstrap_brand_primary"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/SearchTextcar"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        />
+    <TextView
+        android:id="@+id/Searchtextrating"
+        android:text="Ratting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_below="@+id/SearchEdtcar"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        />
+    <RatingBar
+        android:id="@+id/Searchrating"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+
+       android:layout_below="@+id/Searchtextrating"
+        android:layout_alignStart="@+id/SearchTextcar"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="30dp"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/Rvtaxi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Searchrating"
+        ></android.support.v7.widget.RecyclerView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.boktotaxi.boktotaxi.WriteReview">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/Writecarlicense2"
+            android:text="Car license"
+            android:layout_below="@+id/rating"
+            android:textSize="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            />
+        />
+        <EditText
+            android:id="@+id/WriteEdtcar2"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:background="@color/colorgrayopacity"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/Writecarlicense2"
+            android:layout_marginStart="20dp" />
+        <View
+            android:layout_below="@+id/WriteEdtcar2"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/mr.gray"
+            ></View>
+        <TextView
+            android:id="@+id/WriteTextRatting2"
+            android:text="Ratting"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/WriteEdtcar2"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+
+
+            />
+
+        <RatingBar
+            android:id="@+id/Writeratting2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/WriteTextRatting2"
+            android:layout_centerHorizontal="true"
+            android:isIndicator="false"
+            android:numStars="5" />
+
+        <View
+            android:layout_below="@+id/Writeratting2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/mr.gray"
+            ></View>
+        <TextView
+            android:id="@+id/WriteTextFrom2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From."
+            android:textSize="20dp"
+            android:layout_below="@+id/Writeratting2"
+            android:layout_marginLeft="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:id="@+id/WriteEdtFrom2"
+
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@color/colorgrayopacity"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_below="@id/WriteTextFrom2"
+
+            />
+
+
+        <TextView
+            android:id="@+id/WriteTextTo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To."
+
+            android:textSize="20dp"
+            android:layout_below="@+id/Writeratting2"
+            android:layout_alignStart="@+id/WriteEdtTo2"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:layout_marginTop="10dp"
+            />
+
+        <EditText
+            android:id="@+id/WriteEdtTo2"
+            android:layout_marginRight="20dp"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:background="@color/colorgrayopacity"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/WriteTextTo2"
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:id="@+id/WriteTextReview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Review"
+            android:textSize="20dp"
+            android:layout_below="@+id/WriteEdtFrom2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            />
+        />
+
+        <EditText
+            android:id="@+id/WriteEdtReview2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/WriteTextReview2"
+            android:background="@color/colorgrayopacity"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="top|left"
+            android:padding="8dp"
+            />
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/WriteAddreview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="15dp"
+            android:src="@drawable/ic_add"
+
+            />
+    </RelativeLayout>
+</ScrollView>

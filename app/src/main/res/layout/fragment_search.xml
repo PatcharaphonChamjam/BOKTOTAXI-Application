@@ -1,0 +1,29 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.boktotaxi.boktotaxi.Search_Fragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+    <ImageView
+        android:id="@+id/nodataImg"
+        android:visibility="invisible"
+        android:src="@drawable/nodata"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/noserver"
+        android:visibility="invisible"
+        android:src="@drawable/noserver"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

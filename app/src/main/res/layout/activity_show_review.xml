@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:orientation="vertical"
+    android:background="@color/colorabove"
+    tools:context="com.boktotaxi.boktotaxi.Activity.ShowReview">
+
+
+        <RelativeLayout
+            android:id="@+id/rev"
+            android:background="@color/bootstrap_gray_lightest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/picUs2"
+            android:src="@drawable/profile_user"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            />
+        <TextView
+            android:id="@+id/textuser2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_toRightOf="@+id/picUs2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            />
+        <TextView
+            android:id="@+id/dateandtime2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textuser2"
+            android:layout_toRightOf="@+id/picUs2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="7dp"
+            android:text="just now"
+            android:textSize="15dp"
+            />
+
+        <ImageView
+            android:id="@+id/clock"
+            android:src="@drawable/ic_action_clock"
+            android:layout_width="23dp"
+            android:layout_height="23dp"
+            android:layout_toEndOf="@+id/dateandtime2"
+            android:layout_below="@id/textuser2"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="3dp"
+            />
+
+        <TextView
+            android:id="@+id/id"
+            android:text="USERID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible"
+            />
+        <View
+            android:id="@+id/view"
+            android:layout_below="@+id/picUs2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/colorgray"
+            android:layout_marginTop="3dp"
+
+            ></View>
+
+        <TextView
+            android:id="@+id/textrating2"
+            android:text="Ratting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_below="@+id/view"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            />
+        <RatingBar
+            android:id="@+id/rating2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textrating2"
+            android:layout_centerHorizontal="true"
+            android:theme="@style/Rattingbar"
+            />
+
+
+        <TextView
+            android:id="@+id/carlicense2"
+            android:text="Car license"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/rating2"
+            android:layout_alignStart="@+id/Edtreveiw2" />
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/Edtcar2"
+            android:layout_below="@+id/rating2"
+            android:layout_toEndOf="@+id/carlicense2"
+            android:layout_marginLeft="10dp"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorgrayopacity"
+            android:focusable="false"
+            android:clickable="false"
+            />
+        <TextView
+            android:id="@+id/Textfrom2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Edtcar2"
+            android:text="From :"
+            android:textSize="15dp"
+            android:layout_marginTop="7dp"
+            android:layout_alignStart="@+id/carlicense2"
+            />
+        <TextView
+            android:id="@+id/wfrom2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ladprao"
+            android:layout_below="@+id/Edtcar2"
+            android:layout_toEndOf="@id/Textfrom2"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="30dp"
+            />
+        <TextView
+            android:id="@+id/Textto2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Textfrom2"
+            android:layout_marginTop="7dp"
+            android:text="To :"
+            android:textSize="15dp"
+            android:layout_alignStart="@+id/carlicense2"
+            />
+        <TextView
+            android:id="@+id/wto2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rangsit"
+            android:textSize="15dp"
+            android:layout_marginTop="7dp"
+            android:layout_toEndOf="@+id/Textto2"
+            android:layout_below="@+id/wfrom2"
+            android:layout_alignStart="@+id/wfrom2"
+            />
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/Edtreveiw2"
+            android:layout_below="@+id/Textto2"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:gravity="start"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:hint="Write your Review here....."
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:focusable="false"
+            android:clickable="false"
+            />
+        </RelativeLayout>
+
+</LinearLayout>

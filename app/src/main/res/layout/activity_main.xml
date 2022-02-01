@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Main"
+    android:background="@color/colorBackg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.boktotaxi.boktotaxi.Activity.MainActivity">
+
+
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:id="@+id/Logo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/logobublebg"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+         />
+
+    <ImageView
+        android:id="@+id/Boktotaxi"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+       android:src="@drawable/textbokto"
+        android:layout_below="@+id/Logo"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/rec"
+        android:text="LOGIN"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat"/>
+
+    <Button
+        android:id="@+id/btnregis"
+        android:layout_width="150dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="50dp"
+        android:background="@color/colorblack"
+        android:text="SIGH UP"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="#ffffff"
+
+        />
+</RelativeLayout>

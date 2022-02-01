@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/navigation_main"
+        icon="@drawable/main_file"
+        title="MAIN"
+        />
+    <tab
+        id="@+id/navigation_raing"
+        icon="@drawable/ratting"
+        title="REVIEW"/>
+    <tab
+        id="@+id/navigation_profile"
+        icon="@drawable/avatar"
+        title="PROFILE" />
+</tabs>

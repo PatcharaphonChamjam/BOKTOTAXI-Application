@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BOKTOTAXI</string>
+    <string name="title_activity_bottom_action_bar">BOKTOTAXI</string>
+    <string name="title_main">MAIN</string>
+    <string name="title_review">REVIEW</string>
+    <string name="title_profile">PROFILE</string>
+    <string name="title_search">SEARCH</string>
+    <string name="titile_show">Show Review</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

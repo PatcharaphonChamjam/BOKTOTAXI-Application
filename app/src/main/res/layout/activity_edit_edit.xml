@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackg"
+    tools:context="com.boktotaxi.boktotaxi.Activity.edit_editActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical"
+        >
+
+
+
+    <TextView
+        android:id="@+id/textchaneguser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/frametext"
+        android:text="Change Username"
+        android:textSize="20dp"
+        android:paddingLeft="8dp"
+        android:gravity="center_vertical"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/frametextlaout"
+
+        >
+
+        <EditText
+            android:id="@+id/editUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorwhite"
+            android:textSize="20dp"
+            android:hint="Username"
+            android:layout_margin="8dp"
+            android:inputType="textPersonName"
+            android:layout_gravity="center"
+
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/textpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Change Password"
+        android:textSize="20dp"
+        android:paddingLeft="8dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/frametext"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/frametextlaout"
+        >
+
+        <EditText
+            android:id="@+id/editpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorwhite"
+            android:textSize="20dp"
+            android:hint="Current password"
+            android:layout_margin="8dp"
+            android:inputType="textPassword"
+
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/frametextlaout"
+
+
+        >
+
+        <EditText
+            android:id="@+id/editnewpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editpassword"
+            android:background="@color/colorwhite"
+            android:textSize="20dp"
+            android:hint="New password"
+            android:layout_margin="8dp"
+            android:inputType="textPassword"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/frametextlaout"
+        >
+
+        <EditText
+            android:id="@+id/editrenewpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editnewpass"
+            android:background="@color/colorwhite"
+            android:textSize="20dp"
+            android:hint="Re-type new password"
+            android:layout_margin="8dp"
+            android:inputType="textPassword"
+
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/editsave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Changes"
+        android:textColor="@color/colorwhite"
+        android:background="@color/colorblack"
+        android:layout_marginTop="50dp"
+
+        />
+
+    <Button
+        android:id="@+id/editcancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rec"
+        />
+    </LinearLayout>
+</ScrollView>
